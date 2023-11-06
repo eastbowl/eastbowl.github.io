@@ -1,0 +1,5210 @@
+
+<html>
+  
+<style>
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+
+h1,h2,h3,h4,h5,h6,legend{
+font-family:"Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;
+font-weight:700;
+margin-top:0;
+}
+
+# NOTE: h1 is the title level.  h2 represents the top heading level of the org file.
+
+h1{
+font-size:155%;
+text-align: left !important;
+margin-top: 2em !important;
+margin-bottom: 1.83em !important;
+}
+
+.title{
+text-align: center !important;
+font-size:255%; /* of h1 */
+margin-bottom: 2em !important;
+border-top:0 !important;
+}
+
+.subtitle{
+font-size:95%; /* of h1 */
+}
+
+
+h2{
+font-size:150%;
+text-transform:uppercase;
+margin-top: 3em;
+border-top: 1px solid black;
+padding-top: .5em; /* padding between border and h2 text */
+}
+
+
+h3{
+font-size:125%;
+}
+
+
+h4{
+font-size:115%;
+}
+
+
+h5{
+font-size:110%;
+}
+
+
+h6{
+font-size:100%;
+}
+
+
+h4,h5,h6{
+color:#2980B9;
+font-weight:300;
+}
+
+
+html{
+-ms-text-size-adjust:100%;
+-webkit-text-size-adjust:100%;
+font-size:100%;
+height:100%;
+overflow-x:auto;
+scroll-behavior: smooth;
+}
+
+
+body{
+background:#edf0f2;
+color:#404040;
+font-family:"Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
+font-weight:normal;
+margin:0;
+min-height:100%;
+overflow-x:auto;
+}
+
+
+#content{
+background:#fcfcfc;
+height:100%;
+margin-left:300px;
+/* margin:auto; */
+max-width:1800px;
+min-height:100%;
+padding:1.618em 3.236em;
+}
+
+
+p{
+font-size:16px;
+line-height:24px;
+margin:0px 0px 24px 0px;
+}
+
+
+b,strong{
+font-weight:bold}
+
+
+blockquote{
+background-color: #F0F0F0;
+border-left:5px solid #CCCCCC;
+font-style:italic;
+line-height:24px;
+margin:0px 0px 24px 0px;
+/* margin-left:24px; */
+padding: 6px 20px;
+}
+
+
+ul,ol,dl{
+line-height:24px;
+list-style-image:none;
+/* list-style:none; */
+margin:0px 0px 24px 0px;
+padding:0;
+}
+
+
+li{
+margin-left: 24px;
+}
+
+
+dd{
+margin:0;
+}
+
+
+#content .section ul,#content .toctree-wrapper ul,article ul{
+list-style:disc;
+line-height:24px;
+margin-bottom:24px}
+
+
+#content .section ul li,#content .toctree-wrapper ul li,article ul li{
+list-style:disc;
+margin-left:24px}
+
+
+#content .section ul li p:last-child,#content .toctree-wrapper ul li p:last-child,article ul li p:last-child{
+margin-bottom:0}
+
+
+#content .section ul li ul,#content .toctree-wrapper ul li ul,article ul li ul{
+margin-bottom:0}
+
+
+#content .section ul li li,#content .toctree-wrapper ul li li,article ul li li{
+list-style:circle}
+
+
+#content .section ul li li li,#content .toctree-wrapper ul li li li,article ul li li li{
+list-style:square}
+
+
+#content .section ul li ol li,#content .toctree-wrapper ul li ol li,article ul li ol li{
+list-style:decimal}
+
+
+#content .section ol,#content ol,article ol{
+list-style:decimal;
+line-height:24px;
+margin-bottom:24px}
+
+
+#content .section ol li,#content ol li,article ol li{
+list-style:decimal;
+margin-left:24px}
+
+
+#content .section ol li p:last-child,#content ol li p:last-child,article ol li p:last-child{
+margin-bottom:0}
+
+
+#content .section ol li ul,#content ol li ul,article ol li ul{
+margin-bottom:0}
+
+
+#content .section ol li ul li,#content ol li ul li,article ol li ul li{
+list-style:disc}
+
+
+dl dt{
+font-weight:bold;
+}
+
+
+dl p,dl table,dl ul,dl ol{
+margin-bottom:12px !important;
+}
+
+
+dl dd{
+margin:0 0 12px 24px;
+}
+
+
+@media print{
+.codeblock,pre.src{
+white-space:pre.src-wrap}
+}
+
+
+@media print{
+html,body,section{
+background:none !important}
+
+
+*{
+box-shadow:none !important;
+text-shadow:none !important;
+filter:none !important;
+-ms-filter:none !important}
+
+
+a,a:visited{
+text-decoration:underline}
+
+
+pre.src,blockquote{
+page-break-inside:avoid}
+
+
+thead{
+display:table-header-group}
+
+
+tr,img{
+page-break-inside:avoid}
+
+
+img{
+max-width:100% !important}
+
+
+@page{
+margin:0.5cm}
+
+
+p,h2,h3{
+orphans:3;
+widows:3}
+
+
+h2,h3{
+page-break-after:avoid}
+}
+
+
+@media print{
+#postamble{
+display:content}
+
+
+#content{
+margin-left:0}
+}
+
+
+@media print{
+#table-of-contents{
+display:contents}
+
+
+@page{
+size: auto;
+margin: 25mm 25mm 25mm 25mm;}
+
+
+body {
+margin: 0px;}
+}
+
+
+@media screen and (max-width: 768px){
+}
+
+
+@media only screen and (max-width: 480px){
+}
+
+
+@media screen and (max-width: 768px){
+.tablet-hide{
+display:none}
+}
+
+
+@media screen and (max-width: 480px){
+.mobile-hide{
+display:none}
+}
+
+
+@media screen and (max-width: 480px){
+}
+
+
+@media screen and (max-width: 768px){
+#content{
+margin-left:0}
+
+
+#content #content{
+padding:1.618em}
+
+
+#content.shift{
+position:fixed;
+min-width:100%;
+left:85%;
+top:0;
+height:100%;
+overflow:hidden}
+}
+
+
+@media screen and (min-width: 1400px){
+#content{
+background:rgba(0,0,0,0.05)}
+
+
+#content{
+background:#fcfcfc}
+}
+
+
+@media screen and (max-width: 768px){
+#copyright{
+width:85%;
+display:none}
+
+
+#copyright.shift{
+display:block}
+
+
+img{
+width:100%;
+height:auto}
+}
+
+
+@media screen and (max-width: 480px){
+#content .sidebar{
+width:100%}
+}
+
+
+code{
+background:#fff;
+border:solid 1px #e1e4e5;
+/* color:#000;  for clickable code */
+font-family:Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+font-size:75%;
+max-width:100%;
+overflow-x:auto;
+padding:0 5px;
+white-space:nowrap;
+}
+
+
+.codeblock-example{
+border:1px solid #e1e4e5;
+border-bottom:none;
+padding:24px;
+padding-top:48px;
+font-weight:500;
+background:#fff;
+position:relative}
+
+
+.codeblock-example:after{
+content:"Example";
+position:absolute;
+top:0px;
+left:0px;
+background:#9B59B6;
+color:#fff;
+padding:6px 12px}
+
+
+.codeblock-example.prettyprint-example-only{
+border:1px solid #e1e4e5;
+margin-bottom:24px}
+
+
+.codeblock,pre.src,#content .literal-block{
+border:1px solid #e1e4e5;
+padding:12px;
+overflow-x:auto;
+background:#fff;
+margin:1px 0 24px 0}
+
+
+pre.src{
+/* color:#404040; */
+display:block;
+font-family:Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+font-size:12px;
+line-height:1.5;
+margin:1px 0px 24px 0px;
+overflow:auto;
+padding:12px;
+white-space:pre;
+}
+
+
+.example{
+background:#f3f6f6;
+border:1px solid #e1e4e5;
+color:#404040;
+font-family:Consolas;
+font-size: 100%;
+line-height: 1.5;
+margin-bottom:24px;
+padding:12px;
+white-space: pre-wrap;  /*force word wrapping*/
+}
+
+
+table{
+border-collapse:collapse;
+border-spacing:0;
+empty-cells:show;
+margin-bottom:24px;
+border-bottom:1px solid #e1e4e5;
+}
+
+
+td{
+vertical-align:top}
+
+
+table td,table th{
+font-size:90%;
+margin:0;
+overflow:visible;
+padding:8px 16px;
+background-color:white;
+border:1px solid #e1e4e5;
+}
+
+
+table thead th{
+font-weight:bold;
+border-top:3px solid #e1e4e5;
+border-bottom:1px solid #e1e4e5;
+}
+
+
+table caption{
+color:#000;
+font:italic 85%/1 arial,sans-serif;
+padding:1em 0;
+}
+
+
+table tr:nth-child(2n-1) td{
+background-color:#f3f6f6;
+}
+
+
+table tr:nth-child(2n) td{
+background-color:white;
+}
+
+
+.figure p{
+color:#000;
+font:italic 85%/1 arial,sans-serif;
+padding:1em 0;
+}
+
+
+.rotate-90{
+-webkit-transform:rotate(90deg);
+-moz-transform:rotate(90deg);
+-ms-transform:rotate(90deg);
+-o-transform:rotate(90deg);
+transform:rotate(90deg);
+}
+
+
+.rotate-270{
+-webkit-transform:rotate(270deg);
+-moz-transform:rotate(270deg);
+-ms-transform:rotate(270deg);
+-o-transform:rotate(270deg);
+transform:rotate(270deg);
+}
+
+
+#toggle-sidebar,
+#table-of-contents .close-sidebar {
+display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+#table-of-contents {
+display: none;
+width: 60%;
+}
+
+
+#table-of-contents h2 a {
+display: block;
+}
+
+
+#table-of-contents:target {
+display: block;
+}
+
+
+#copyright, #postamble {
+display: none;
+}
+
+
+#toggle-sidebar {
+display: block;
+margin-bottom: 1.6em;
+padding: 0.6em;
+text-align: center;
+}
+
+
+#toggle-sidebar h2 {
+background-color:#2980B9;
+width:100%;
+height:50px;
+left:0;
+top:0;
+color: white;
+font-size: 100%;
+line-height: 50px;
+position:fixed;
+margin: 0;
+padding: 0;
+opacity:0.7;
+z-index: 10;
+}
+
+
+#table-of-contents .close-sidebar {
+color: rgba(255, 255, 255, 0.3);
+display: inline-block;
+margin: 0px 10px 0px 45px;
+padding: 10px;
+}
+}
+
+
+*{
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+}
+
+
+figcaption,figure,footer,header,hgroup,nav{
+display:block}
+
+
+ins{
+background:#ff9;
+color:#000;
+text-decoration:none}
+
+
+mark{
+background:#ff0;
+color:#000;
+font-style:italic;
+font-weight:bold}
+
+
+small{
+font-size:85%}
+
+
+sub,sup{
+font-size:75%;
+line-height:0;
+position:relative;
+vertical-align:baseline}
+
+
+sup{
+top:-0.5em}
+
+
+sub{
+bottom:-0.25em}
+
+
+img{
+-ms-interpolation-mode:bicubic;
+vertical-align:middle;
+max-width:100%}
+
+
+svg:not(:root){
+overflow:hidden}
+
+
+figure{
+margin:0}
+
+
+label{
+cursor:pointer}
+
+
+legend{
+border:0;
+margin-left:-7px;
+padding:0;
+white-space:normal}
+
+
+.fa:before,#content .admonition-title:before,#content h1 .headerlink:before,#content h2 .headerlink:before,#content h3 .headerlink:before,#content h4 .headerlink:before,#content h5 .headerlink:before,#content h6 .headerlink:before,#content dl dt .headerlink:before,.icon:before,.wy-dropdown .caret:before,.wy-inline-validate.wy-inline-validate-success .wy-input-context:before,.wy-inline-validate.wy-inline-validate-danger .wy-input-context:before,.wy-inline-validate.wy-inline-validate-warning .wy-input-context:before,.wy-inline-validate.wy-inline-validate-info .wy-input-context:before,.wy-alert,#content .note,#content .attention,#content .caution,#content .danger,#content .error,#content .hint,#content .important,#content .tip,#content .warning,#content .seealso,#content .admonitiontodo,.btn,input[type="text"],input[type="password"],input[type="email"],input[type="url"],input[type="date"],input[type="month"],input[type="time"],input[type="datetime"],input[type="datetime-local"],input[type="week"],input[type="number"],input[type="search"],input[type="tel"],input[type="color"],select,textarea,#table-of-contents li.on a,#table-of-contents li.current>a,.wy-side-nav-search>a,.wy-side-nav-search .wy-dropdown>a,.wy-nav-top a{
+-webkit-font-smoothing:antialiased}
+
+
+/*!
+*  Font Awesome 4.1.0 by @davegandy - http://fontawesome.io - @fontawesome
+*  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+*/ @font-face{
+font-family:'FontAwesome';
+src:url("../fonts/fontawesome-webfont.eot?v=4.1.0");
+src:url("../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0") format("embedded-opentype"),url("../fonts/fontawesome-webfont.woff?v=4.1.0") format("woff"),url("../fonts/fontawesome-webfont.ttf?v=4.1.0") format("truetype"),url("../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular") format("svg");
+font-weight:normal;
+font-style:normal}
+
+
+.fa,#content .admonition-title,.icon{
+display:inline-block;
+font-family:FontAwesome;
+font-style:normal;
+font-weight:normal;
+line-height:1;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale}
+
+
+.fa-ul{
+padding-left:0;
+margin-left:2.14286em;
+list-style-type:none}
+
+
+.fa-ul>li{
+position:relative}
+
+
+.fa-li{
+position:absolute;
+left:-2.14286em;
+width:2.14286em;
+top:0.14286em;
+text-align:center}
+
+
+.fa-li.fa-lg{
+left:-1.85714em}
+
+
+.fa-border{
+padding:.2em .25em .15em;
+border:solid 0.08em #eee;
+border-radius:.1em}
+
+
+.fa,#content .admonition-title{
+font-family:inherit}
+
+
+.fa:before,#content .admonition-title:before{
+font-family:"FontAwesome";
+display:inline-block;
+font-style:normal;
+font-weight:normal;
+line-height:1;
+text-decoration:inherit}
+
+
+a .fa,a #content .admonition-title,#content a .admonition-title{
+display:inline-block;
+text-decoration:inherit}
+
+
+.nav #content .admonition-title,#content .nav .admonition-title,.nav .icon{
+display:inline}
+
+
+.wy-alert,#content .note,#content .attention,#content .caution,#content .danger,#content .error,#content .hint,#content .important,#content .tip,#content .warning,#content .seealso,#content .admonitiontodo{
+padding:12px;
+line-height:24px;
+margin-bottom:24px;
+/* background:#e7f2fa; */
+}
+
+
+.wy-alert-title,#content .admonition-title{
+color:#fff;
+font-weight:bold;
+display:block;
+color:#fff;
+/* background:#6ab0de; */
+/* margin:-12px; */
+padding:6px 12px;
+margin-bottom:0px}
+
+
+#content .danger,#content .error{
+background:#fdf3f2}
+
+
+.wy-alert.wy-alert-warning,#content .wy-alert-warning.note,#content .attention,#content .caution,#content .wy-alert-warning.danger,#content .wy-alert-warning.error,#content .wy-alert-warning.hint,#content .wy-alert-warning.important,#content .wy-alert-warning.tip,#content .warning,#content .wy-alert-warning.seealso,#content .admonitiontodo{
+background:#ffedcc}
+
+
+#content .admonition-title.note:before, #content .admonition-title.seealso:before,
+#content .admonition-title.warning:before, #content .admonition-title.caution:before,
+#content .admonition-title.attention:before,
+#content .admonition-title.tip:before, #content .admonition-title.hint:before,
+#content .admonition-title.important:before,
+#content .admonition-title.error:before, #content .admonition-title.danger:before{
+font-family:FontAwesome;
+content: "";}
+
+
+#content .note,#content .seealso{
+background:#e7f2fa}
+
+
+.wy-alert p:last-child,#content .note p:last-child,#content .attention p:last-child,#content .caution p:last-child,#content .danger p:last-child,#content .error p:last-child,#content .hint p:last-child,#content .important p:last-child,#content .tip p:last-child,#content .warning p:last-child,#content .seealso p:last-child,#content .admonitiontodo p:last-child{
+margin-bottom:0}
+
+
+#content .admonition-title.tip,#content .admonition-title.important,#content .admonition-title.hint{
+line-height: 1;
+background:#1abc9c}
+
+
+#content .important,#content .tip,#content .hint{
+background:#dbfaf4}
+
+
+#content .admonition-title.note,#content .admonition-title.seealso{
+line-height: 1;
+background:#6ab0de}
+
+
+#content .admonition-title.warning,#content .admonition-title.caution,#content .admonition-title.attention{
+line-height: 1;
+background:#F0B37E}
+
+
+#content .admonition-title.error,#content .admonition-title.danger{
+line-height: 1;
+background:#f29f97}
+
+
+legend{
+display:block;
+width:100%;
+border:0;
+padding:0;
+white-space:normal;
+margin-bottom:24px;
+font-size:150%;
+*margin-left:-7px}
+
+
+label{
+display:block;
+margin:0 0 0.3125em 0;
+color:#333;
+font-size:90%}
+
+
+a{
+color:#2980B9;
+text-decoration:none;
+cursor:pointer}
+
+
+
+
+a:hover,a:active{
+outline:0;
+}
+
+
+a:hover{
+color:#3091d1}
+
+
+a:visited{
+color:#9B59B6}
+
+
+.left{
+text-align:left}
+
+
+.center{
+text-align:center}
+
+
+.right{
+text-align:right}
+
+
+hr{
+display:block;
+height:1px;
+border:0;
+border-top:1px solid #e1e4e5;
+margin:24px 0;
+padding:0}
+
+
+#table-of-contents li{
+list-style:none;
+margin-left: 0px;
+}
+
+
+#table-of-contents header{
+height:32px;
+display:inline-block;
+line-height:32px;
+padding:0 1.618em;
+display:block;
+font-weight:bold;
+text-transform:uppercase;
+font-size:80%;
+color:#2980B9;
+white-space:nowrap}
+
+
+#table-of-contents ul{
+margin-bottom:0}
+
+
+#table-of-contents li.divide-top{
+border-top:solid 1px #404040}
+
+
+#table-of-contents li.divide-bottom{
+border-bottom:solid 1px #404040}
+
+
+#table-of-contents li.current{
+background:#e3e3e3}
+
+
+#table-of-contents li.current a{
+color:gray;
+border-right:solid 1px #c9c9c9;
+padding:0.4045em 2.427em}
+
+
+#table-of-contents li.current a:hover{
+background:#d6d6d6}
+
+
+#table-of-contents li a{
+/* color:#404040; */
+padding:0.4045em 1.618em;
+position:relative;
+/* background:#fcfcfc; */
+border:none;
+/* border-bottom:solid 1px #c9c9c9; */
+/* border-top:solid 1px #c9c9c9; */
+padding-left:1.618em -4px}
+
+
+#table-of-contents li.on a:hover,#table-of-contents li.current>a:hover{
+background:#fcfcfc}
+
+/* table of contents adjustments (other than heading, which is set by 'h2') */
+/* are done via 'li ul' incantations, below */
+
+/* this is second-level, i.e. 1.1 */
+#table-of-contents li ul li a{
+padding:0.4045em 2.427em;
+color:#b3b3b3!important;}
+
+/* this is third-level 1.1.1*/
+#table-of-contents li ul li ul li a{
+padding:0.4045em 3.236em}
+
+/* this is fourth-level 1.1.1.1*/
+#table-of-contents li ul li ul li ul li a{
+padding:0.4045em 4.236em}
+
+/* this is fifth-level 1.1.1.1.1 */
+#table-of-contents li ul li ul li ul li ul li a{
+padding:0.4045em 5.236em}
+
+#table-of-contents li.current ul{
+display:block}
+
+
+/* #table-of-contents li ul{ */
+/*     margin-bottom:0; */
+/*     display:none} */
+
+
+#table-of-contents .local-toc li ul{
+display:block}
+
+
+#table-of-contents li ul li a{
+margin-bottom:0;
+color:#b3b3b3;
+font-weight:normal}
+
+
+#table-of-contents a{
+display:inline-block;
+line-height:1.3;
+padding:0.4045em 1.618em;
+display:block;
+position:relative;
+font-size:95%;
+color:#f8f8ff!important;
+direction: ltr;
+}
+
+
+#table-of-contents a:hover{
+	color: #ffffff !important;
+background-color:#4e4a4a;
+cursor:pointer}
+
+
+/* #text-table-of-contents { */
+/*     overflow:scroll; */
+/* } */
+
+
+#table-of-contents{
+position:fixed;
+top:0;
+left:0;
+width:350px;
+overflow-x:hidden;
+overflow-y:scroll;
+height:100%;
+background:#343131;
+z-index:200;
+scrollbar-base-color: #1F1D1D;
+scrollbar-arrow-color: #b3b3b3;
+scrollbar-shadow-color: #1F1D1D;
+scrollbar-track-color : #343131;
+}
+
+
+#table-of-contents h2{
+z-index:200;
+background-color:#2980B9;
+text-align:center;
+padding:0.809em;
+display:block;
+color:#fcfcfc;
+font-size: 100%;
+margin-bottom:0.809em}
+
+
+ul.nav > li ul {
+	display: none;
+}
+
+
+li.active {
+	background-color: #e3e3e3;
+}
+
+
+li.active>a {
+	color: black !important;
+}
+
+
+ul.nav>li.active a {
+	color: #404040 !important;
+}
+
+
+ul.nav>li.active li.active {
+	background-color: #c9c9c9;
+}
+
+
+ul.nav>li.active li.active>a {
+	color: black !important;
+border-right:solid 1px #c9c9c9 !important;
+font-weight: bold !important;
+display: block !important;
+}
+
+
+ul.nav>li.active>a {
+	background-color: #fcfcfc;
+	color: black !important;
+border-bottom:solid 1px #c9c9c9 !important; /* XXX Restrict it to 2nd level */
+border-right:solid 1px #c9c9c9 !important;
+font-weight: bold !important;
+display: block !important;
+}
+
+
+li.active>ul {
+	display: inline !important;
+}
+
+footer{
+color:#999}
+
+
+footer p{
+margin-bottom:12px}
+
+
+#copyright, #postamble{
+position:static;
+bottom:0;
+right:0;
+width:800px;
+color:gray;
+# background:#1f1d1d;
+# border-top:solid 10px #343131;
+font-family:"Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
+font-size: 90%;
+z-index:400;
+padding:12px;
+}
+
+
+#postamble .author {
+font-size: 90%;
+margin-bottom: 0px;
+margin-left: 360px;
+}
+
+
+#postamble .date {
+font-size: 90%;
+margin-bottom: 0px;
+margin-left: 360px;
+}
+
+
+#postamble .creator,#postamble .validation {
+display:none;
+}
+
+
+#copyright a{
+color:#2980B9;
+text-decoration:none}
+
+
+#copyright .rst-current-version{
+padding:12px;
+background-color:#272525;
+display:block;
+text-align:right;
+font-size:90%;
+cursor:pointer;
+color:#27AE60;
+*zoom:1}
+
+
+#content img{
+max-width:100%;
+}
+
+
+#content div.figure{
+margin-bottom:24px}
+
+
+#content div.figure.align-center{
+text-align:center}
+
+
+#content .section>img,#content .section>a>img{
+margin-bottom:24px}
+
+
+.verse{
+border-left:5px solid #6AB0DE;
+background-color: #E7F2FA;
+padding: 6px 20px;
+font-style:italic;
+}
+
+
+#content .note .last,#content .attention .last,#content .caution .last,#content .danger .last,#content .error .last,#content .hint .last,#content .important .last,#content .tip .last,#content .warning .last,#content .seealso .last,#content .admonitiontodo .last{
+margin-bottom:0}
+
+
+#content .admonition-title:before{
+margin-right:4px}
+
+
+#content .section ol p,#content .section ul p{
+margin-bottom:12px}
+
+
+#content h1 .headerlink,#content h2 .headerlink,#content h3 .headerlink,#content h4 .headerlink,#content h5 .headerlink,#content h6 .headerlink,#content dl dt .headerlink{
+display:none;
+visibility:hidden;
+font-size:14px}
+
+
+#content h1 .headerlink:after,#content h2 .headerlink:after,#content h3 .headerlink:after,#content h4 .headerlink:after,#content h5 .headerlink:after,#content h6 .headerlink:after,#content dl dt .headerlink:after{
+visibility:visible;
+content:"";
+font-family:FontAwesome;
+display:inline-block}
+
+
+#content h1:hover .headerlink,#content h2:hover .headerlink,#content h3:hover .headerlink,#content h4:hover .headerlink,#content h5:hover .headerlink,#content h6:hover .headerlink,#content dl dt:hover .headerlink{
+display:inline-block}
+
+
+#content .sidebar{
+float:right;
+width:40%;
+display:block;
+margin:0 0 24px 24px;
+padding:24px;
+background:#f3f6f6;
+border:solid 1px #e1e4e5}
+
+
+#content .sidebar p,#content .sidebar ul,#content .sidebar dl{
+font-size:90%}
+
+
+#content .sidebar .last{
+margin-bottom:0}
+
+
+#content .sidebar .sidebar-title{
+display:block;
+font-family:"Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;
+font-weight:bold;
+background:#e1e4e5;
+padding:6px 12px;
+margin:-24px;
+margin-bottom:24px;
+font-size:100%}
+
+
+#content .highlighted{
+background:#F1C40F;
+display:inline-block;
+font-weight:bold;
+padding:0 6px}
+
+
+#content .footnote-reference,#content .citation-reference{
+vertical-align:super;
+font-size:90%}
+
+
+span[id*='MathJax-Span']{
+color:#404040}
+
+
+.math{
+text-align:center}
+
+
+#footnotes{
+border-top:1px solid #e1e4e5;
+padding-top: 36px;
+}
+
+
+h2.footnotes{
+display:none;
+}
+
+
+.footnum, .footref{
+color: #2980b9;
+font-size: 90%;
+font-family:"Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
+}
+
+
+.footnum:before, .footref:before{
+content:"[";
+}
+
+
+.footnum:after, .footref:after{
+content:"]";
+}
+
+
+.footpara {
+color: #999;
+font-size: 90%;
+font-family:"Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
+padding-bottom: 8px;
+padding-left: 16px;
+padding-right: 16px;
+padding-top: 8px;
+line-height: 1.25em;
+/* display: inline; */
+}
+
+
+.todo{
+background-color: #f29f97;
+padding: 0px 4px;
+color: #fff;
+}
+
+
+.WAIT, .nilWAIT{
+background-color: #6AB097;
+}
+
+
+.done{
+background-color: #6ab0de;
+padding: 0px 4px;
+color: #fff;
+}
+
+
+.tag span {
+background-color: #EDEDED;
+border: 1px solid #EDEDED;
+color: #939393;
+cursor: pointer;
+display: block;
+float: right;
+font-size: 80%;
+font-weight: normal;
+margin: 0 3px;
+padding: 1px 2px;
+border-radius: 10px;
+}
+
+
+.tag .FLAGGED {
+background-color: #DB2D27;
+border: 1px solid #DB2D27;
+color: white;
+font-weight: bold;
+}
+
+
+.timestamp {
+font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+font-size: 90%;
+color: navy;
+}
+
+
+.nav .timestamp {
+color: inherit;
+}
+
+
+.inlinetask {
+background: #FFF9E3;  /* url(dialog-todo.png) no-repeat 10px 8px; */
+border: 3px solid #FFEB8E;
+/* border-right-style: none; */
+/* border-left-style: none; */
+/* padding: 10px 20px 10px 60px; */
+padding: 9px 12px;
+margin-bottom: 24px;
+font-family:"Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif}
+
+/* SH modifications */
+p,h1,h2,h3,h4,h5,h6 {padding-left: 10px;}
+
+</style>
+
+</style>
+
+
+<style>
+table td,table th{
+padding:1px 6px;
+}
+</style>
+
+  <head>
+    <title> Vehicle Maintenance Logs </title>
+  </head>
+
+  <body>
+    <div id="content" class="content">
+      
+      <div id="table-of-contents" role="doc-toc">
+	<h2>Table of Contents</h2>
+	<div id="text-table-of-contents" role="doc-toc">
+        <ul>
+          <li><a href="#Sentra">1. Sentra</a>
+          <ul>
+            <li><a href="#Sentra-Maintenance-Log">1.1 Maintenance-Log</a></li>
+            <li><a href="#Sentra-Total-Costs">1.2 Total-Costs</a></li>
+            <li><a href="#Sentra-Cost-per-km">1.3 Cost-per-km</a></li>
+          </li>          </ul>
+          <li><a href="#VFR">2. VFR</a>
+          <ul>
+            <li><a href="#VFR-Maintenance-Log">2.1 Maintenance-Log</a></li>
+            <li><a href="#VFR-Total-Costs">2.2 Total-Costs</a></li>
+            <li><a href="#VFR-Cost-per-km">2.3 Cost-per-km</a></li>
+          </li>          </ul>
+          <li><a href="#Highlander">3. Highlander</a>
+          <ul>
+            <li><a href="#Highlander-Maintenance-Log">3.1 Maintenance-Log</a></li>
+            <li><a href="#Highlander-Total-Costs">3.2 Total-Costs</a></li>
+            <li><a href="#Highlander-Cost-per-km">3.3 Cost-per-km</a></li>
+          </li>          </ul>
+        </ul>
+
+	</div>
+      </div>
+      <div id="outline-container-1" class="outline-2">
+        <h2 id="Sentra"><span class="section-number-2">1. </span>Sentra</h2>
+        <div class="outline-text-2" id="text-1">
+        </div>
+        <div id="outline-container-Sentra-Maintenance-Log" class="outline-3">
+          <h3 id="Sentra-Maintenance-Log"><span class="section-number-3">1.1. </span>Sentra Maintenance-Log</h3>
+          <div class="outline-text-3" id="text-1-1">
+            <p>
+ 
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>kms</th>
+      <th>Work Performed</th>
+      <th>Done By</th>
+      <th>Notes</th>
+      <th>Maintenance Cost</th>
+      <th>Other Cost</th>
+      <th>Tire Cost</th>
+      <th>Extra</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2018-04-30</td>
+      <td>15500</td>
+      <td>Oil and Filter Change</td>
+      <td>Canadian Tire</td>
+      <td></td>
+      <td>70.00</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2018-05-09</td>
+      <td>16000</td>
+      <td>New Alpine stereo and amp</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td></td>
+      <td>1300.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2018-05-09</td>
+      <td>16000</td>
+      <td>Speakers</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td></td>
+      <td>450.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2018-05-17</td>
+      <td>16401</td>
+      <td>Air filter change</td>
+      <td>Downtown Nissan</td>
+      <td></td>
+      <td>26.00</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Brake fluid change</td>
+      <td></td>
+      <td></td>
+      <td>135.00</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Tire rotation</td>
+      <td></td>
+      <td></td>
+      <td>45.00</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Install spoiler</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>575.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2018-11-01</td>
+      <td>24190</td>
+      <td>Oil and Filter change</td>
+      <td>Gerard St. Mechanic</td>
+      <td></td>
+      <td>100.00</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Snow Tires (mount)</td>
+      <td></td>
+      <td></td>
+      <td>120.00</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2019-05-24</td>
+      <td>32000</td>
+      <td>New wheels for summer tires</td>
+      <td>Quality Auto</td>
+      <td></td>
+      <td></td>
+      <td>339</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2019-05-29</td>
+      <td>31980</td>
+      <td>New (used) tire (punctured old tire)</td>
+      <td>Superior Tire</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2019-07-31</td>
+      <td>33500</td>
+      <td>Oil and Filter Change</td>
+      <td>Mr Lube</td>
+      <td></td>
+      <td>89.00</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Air filter checked (OK)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2020-01-24</td>
+      <td>41700</td>
+      <td>Oil Change</td>
+      <td>Mr Lube</td>
+      <td></td>
+      <td>92.00</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2021-06-19</td>
+      <td>49842</td>
+      <td>New Battery</td>
+      <td>S. Harmer</td>
+      <td>4 year Canadian Tire warranty. Free replacement if battery test fails (NOT just pro-rated). Receipt in car)</td>
+      <td>150</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2021-07-06</td>
+      <td>50195</td>
+      <td>Oil & Filter change.  Air filter.  Fuel injector fluid cleaner added to tank.</td>
+      <td>Danforth Auto Tech</td>
+      <td></td>
+      <td>182.00</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2021-11-01</td>
+      <td></td>
+      <td>New wiper blades - Bosch</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>45</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2022-01-15</td>
+      <td>55300</td>
+      <td>New low beam headlight bulbs (Osram)</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>50.00</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2022-01-20</td>
+      <td>55360</td>
+      <td>Oil and filter change; fuel injector cleaner fluid.</td>
+      <td>Danforth Auto Tech</td>
+      <td>Brakes at 10-15%</td>
+      <td>140.00</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2022-09-13</td>
+      <td>58525</td>
+      <td>Front brake rotors</td>
+      <td>Danforth Auto Tech</td>
+      <td></td>
+      <td>240.00</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2022-09-13</td>
+      <td></td>
+      <td>Front brake pads</td>
+      <td></td>
+      <td></td>
+      <td>140.00</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2022-09-13</td>
+      <td></td>
+      <td>Oil & Filter 0w30 synthetic</td>
+      <td></td>
+      <td></td>
+      <td>100.00</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2022-09-13</td>
+      <td></td>
+      <td>Labour</td>
+      <td></td>
+      <td></td>
+      <td>325.00</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2022-09-13</td>
+      <td></td>
+      <td>Rear brake shoes</td>
+      <td></td>
+      <td></td>
+      <td>135.00</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2023-03-05</td>
+      <td>63400</td>
+      <td>New Headlights. Sylvannia Ultra H11 (low beam)</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>60.00</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2023-08-17</td>
+      <td>65929</td>
+      <td>Oil & Filter Change and fix heat shield</td>
+      <td>Danforth Auto Tech</td>
+      <td></td>
+      <td>200.00</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+            </p>
+          </div>
+        </div>
+        <div id="outline-container-Sentra-Total-Costs" class="outline-3">
+          <h3 id="Sentra-Total-Costs"><span class="section-number-3">1.1. </span>Sentra Total-Costs</h3>
+          <div class="outline-text-3" id="text-1-1">
+            <p>
+ 
+<table>
+  <thead>
+    <tr>
+      <th>Maintenance Cost</th>
+      <th>Tire Cost</th>
+      <th>Other Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2444.00</td>
+      <td>60.00</td>
+      <td>2664.00</td>
+    </tr>
+  </tbody>
+</table>
+            </p>
+          </div>
+        </div>
+        <div id="outline-container-Sentra-Cost-per-km" class="outline-3">
+          <h3 id="Sentra-Cost-per-km"><span class="section-number-3">1.1. </span>Sentra Cost-per-km</h3>
+          <div class="outline-text-3" id="text-1-1">
+            <p>
+ 
+<table>
+  <thead>
+    <tr>
+      <th>Maintenance Cost</th>
+      <th>Tire Cost</th>
+      <th>Other Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.051</td>
+      <td>0.000</td>
+      <td>0.056</td>
+    </tr>
+  </tbody>
+</table>
+            </p>
+          </div>
+        </div>
+      </div>
+      </ul>
+      <div id="outline-container-2" class="outline-2">
+        <h2 id="VFR"><span class="section-number-2">2. </span>VFR</h2>
+        <div class="outline-text-2" id="text-2">
+        </div>
+        <div id="outline-container-VFR-Maintenance-Log" class="outline-3">
+          <h3 id="VFR-Maintenance-Log"><span class="section-number-3">2.1. </span>VFR Maintenance-Log</h3>
+          <div class="outline-text-3" id="text-2-1">
+            <p>
+ 
+<table>
+  <thead>
+    <tr>
+      <th>kms</th>
+      <th>Date</th>
+      <th>Work Done By</th>
+      <th>Work Performed</th>
+      <th>Front Tires</th>
+      <th>Mileage</th>
+      <th>Rear Tires</th>
+      <th>Mileage</th>
+      <th>Notes</th>
+      <th>Maintenance Cost</th>
+      <th>Tire Cost</th>
+      <th>Other Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>600</td>
+      <td>2010-08-07</td>
+      <td>S. Harmer</td>
+      <td>Oil Change</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>20.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>955</td>
+      <td>2010-08-10</td>
+      <td>S. Harmer</td>
+      <td>Oil and Filter Change (Honda HP4 10w30/Honda Filter)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>50.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Check Brakes (OK)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Check bolts fasteners (OK)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>955</td>
+      <td>2010-08-10</td>
+      <td>S. Harmer</td>
+      <td>Install GPS</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4351</td>
+      <td>2010-09-10</td>
+      <td>S. Harmer</td>
+      <td>Install Heated Grip</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>380.00</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Install Voltmeter</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Install Heat Troller</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4351</td>
+      <td>2010-09-10</td>
+      <td>S. Harmer</td>
+      <td>Install Helibars</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>350.00</td>
+    </tr>
+    <tr>
+      <td>4351</td>
+      <td>2010-09-10</td>
+      <td>Rosie Toes</td>
+      <td>Tires</td>
+      <td>Michelin Pilot Road 2</td>
+      <td>8169</td>
+      <td>Michelin Pilot Road 2</td>
+      <td>8169</td>
+      <td>6mm tread depth (rear) at wear bar (centre) 6 (middle) 4 (side)</td>
+      <td></td>
+      <td>440.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2010-10-01</td>
+      <td>S. Harmer</td>
+      <td>Install Trunk</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>600.00</td>
+    </tr>
+    <tr>
+      <td>6950</td>
+      <td>2010-09-20</td>
+      <td>S. Harmer</td>
+      <td>Remove Helibars reinstall stock bars</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-200.00</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Tires - 5mm rear (both)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>9016</td>
+      <td>2010-12-26</td>
+      <td>S. Harmer</td>
+      <td>Oil and Filter Change (Amsoil 10w30/Honda Filter)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>9016</td>
+      <td>2011-02-01</td>
+      <td>S. Harmer</td>
+      <td>Install Traxxion Dynamics Fork Cartridges</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.05kg/mm springs.  Rebound right. Compression left.  Stock rate is .85kg/mm    Oil level 155mm</td>
+      <td></td>
+      <td></td>
+      <td>1100.00</td>
+    </tr>
+    <tr>
+      <td>9016</td>
+      <td>2011-02-01</td>
+      <td>S. Harmer</td>
+      <td>Replace Final Drive Oil (Amsoil Synthetic)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>10658</td>
+      <td>2011-04-29</td>
+      <td>S. Harmer</td>
+      <td>Install Penske Shock</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1200lbs/ft  Stock rate is 1035 lbs/ft</td>
+      <td></td>
+      <td></td>
+      <td>975.00</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2011-05-01</td>
+      <td>S. Harmer</td>
+      <td>Install Vibranators</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>120.00</td>
+    </tr>
+    <tr>
+      <td>12305</td>
+      <td>2011-05-27</td>
+      <td>S. Harmer</td>
+      <td>Install Power Commander V</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>500.00</td>
+    </tr>
+    <tr>
+      <td>12520</td>
+      <td>2011-06-10</td>
+      <td>Rosie Toes</td>
+      <td>Tires</td>
+      <td>Michelin Pilot Road 2</td>
+      <td>6593</td>
+      <td>Michelin Pilot Road 2</td>
+      <td>6593</td>
+      <td>Old Tires have 2.75mm (rear) and 1.25mm (front) tread left</td>
+      <td></td>
+      <td>340.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>12520</td>
+      <td>2011-06-10</td>
+      <td>S. Harmer</td>
+      <td>Install Tire Sensors</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>150.00</td>
+    </tr>
+    <tr>
+      <td>12520</td>
+      <td>2011-06-17</td>
+      <td>S. Harmer</td>
+      <td>Install Trunk Brake Light</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>75.00</td>
+    </tr>
+    <tr>
+      <td>17447</td>
+      <td>2011-06-25</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>4mm tread depth (rear) at wear bar (centre) 3 (middle) 3 (side)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>19032</td>
+      <td>2011-07-13</td>
+      <td>S. Harmer</td>
+      <td>Oil and Filter Change (Amsoil 10w30/Honda Filter)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>40.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>19113</td>
+      <td>2011-07-16</td>
+      <td>Rosie Toes</td>
+      <td></td>
+      <td>Michelin Pilot Road 3</td>
+      <td>8574</td>
+      <td>Michelin Pilot Road 3</td>
+      <td>8574</td>
+      <td>6mm tread depth (rear) at wear bar (centre) 6 (middle) 4 (side)</td>
+      <td></td>
+      <td>410.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>19113</td>
+      <td>2011-07-16</td>
+      <td>S. Harmer</td>
+      <td>Fork Oil Change - Motul 7.5w</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>150mm oil level</td>
+      <td>20.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>19121</td>
+      <td>2011-07-19</td>
+      <td>S. Harmer</td>
+      <td>Replace Air Filter (OEM)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>100.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>21320</td>
+      <td>2011-07-29</td>
+      <td>S. Harmer</td>
+      <td>Change Brake Fluid (f/r)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>16.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Change Clutch Fluid</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>26970</td>
+      <td>2011-09-23</td>
+      <td>S. Harmer</td>
+      <td>Valve Clearance Check</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>See Valve Checks Sheet</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>27687</td>
+      <td>2011-10-01</td>
+      <td>S. Harmer</td>
+      <td>Tires</td>
+      <td>Michelin Pilot Road 3</td>
+      <td>10274</td>
+      <td>Michelin Pilot Road 3</td>
+      <td>10274</td>
+      <td>Taken off - tires have 1.5mm (rear centre) 2mm (rear side) and 1.5mm (front centre) 2.5mm (front side) tread left</td>
+      <td></td>
+      <td>370.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>27687</td>
+      <td>2011-10-01</td>
+      <td>S. Harmer</td>
+      <td>New front brakes (OEM)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>.18mm pad depth (not including backing)  (Old pads were at .05 at worst spot which was at the wear bars)</td>
+      <td>112.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>28015</td>
+      <td>2011-10-18</td>
+      <td>S. Harmer</td>
+      <td>Install Throttlemeister</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>180.00</td>
+    </tr>
+    <tr>
+      <td>28559</td>
+      <td>2011-11-13</td>
+      <td>S. Harmer</td>
+      <td>Oil and Filter Change (Amsoil 10w30/Honda Filter)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>40.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>28842</td>
+      <td>2011-11-18</td>
+      <td></td>
+      <td>Parked for Winter</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2011 Mileage - 19026</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>37 Rides</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>514 km/ride</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>28842</td>
+      <td>2011-12-17</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Saddlebag Liners</td>
+      <td></td>
+      <td></td>
+      <td>103.00</td>
+    </tr>
+    <tr>
+      <td>28842</td>
+      <td>2012-02-18</td>
+      <td>S. Harmer</td>
+      <td>Replace rear fuel injector o-rings (both cylinders)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>3.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Sand and ox-guard ground point (under tank)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>29007</td>
+      <td>2012-03-21</td>
+      <td>S. Harmer</td>
+      <td>Install Bazzaz Z-Bomb</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Very nice!</td>
+      <td></td>
+      <td></td>
+      <td>80.00</td>
+    </tr>
+    <tr>
+      <td>30410</td>
+      <td>2012-04-17</td>
+      <td>S. Harmer</td>
+      <td>Install GE Nighthawk Platinum headlights</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>60.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>32755</td>
+      <td>2012-05-28</td>
+      <td>S. Harmer</td>
+      <td>Oil and Filter Change (Amsoil 10w40/Honda Filter)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>40.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>32802</td>
+      <td>2012-06-03</td>
+      <td>S. Harmer</td>
+      <td>Clean Air Filter</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>37961</td>
+      <td>2012-07-18</td>
+      <td>Rosie Toes</td>
+      <td>New Tires - Pilot Road 3</td>
+      <td>Michelin Pilot Road 3</td>
+      <td>7598</td>
+      <td>Michelin Pilot Road 3</td>
+      <td>7598</td>
+      <td></td>
+      <td></td>
+      <td>430.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>37961</td>
+      <td>2012-07-19</td>
+      <td>S. Harmer</td>
+      <td>Change Fork Oil (Motul 7.5w)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>43291</td>
+      <td>2012-08-01</td>
+      <td>S. Harmer</td>
+      <td>Oil and Filter Change (Amsoil 10w40/Honda Filter)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>40.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>43291</td>
+      <td>2012-08-01</td>
+      <td>S. Harmer</td>
+      <td>Coolant Change</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>20.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>45559</td>
+      <td>2012-09-05</td>
+      <td>Rosie Toes</td>
+      <td>New Tires - Pilot Road 3</td>
+      <td>Michelin Pilot Road 3</td>
+      <td>10000</td>
+      <td>Michelin Pilot Road 3</td>
+      <td>10000</td>
+      <td>(These were remounted to deal with a trip)</td>
+      <td></td>
+      <td>450.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Final Drive Oil Change (Amsoil)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>5.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>New rear brake pads (OEM)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>50.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>48531</td>
+      <td>2012-10-05</td>
+      <td>S. Harmer</td>
+      <td>Clean Air Filter</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>48531</td>
+      <td>2012-10-05</td>
+      <td>S. Harmer</td>
+      <td>Install new pegs</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>150.00</td>
+    </tr>
+    <tr>
+      <td>50123</td>
+      <td>2012-12-09</td>
+      <td>S. Harmer</td>
+      <td>Oil and Filter Change (Amsoil 10w30/Honda Filter)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>40.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>50123</td>
+      <td>2013-01-31</td>
+      <td>S. Harmer</td>
+      <td>New Spark Plugs (OEM NGK)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>80.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Valve Clearance Check</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>See Valve Checks Sheet</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Clean Air Filter</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>51251</td>
+      <td>2013-06-04</td>
+      <td>S. Harmer</td>
+      <td>New Tires - Pilot Road 3</td>
+      <td>Michelin Pilot Road 3</td>
+      <td>10365</td>
+      <td>Michelin Pilot Road 3</td>
+      <td>10365</td>
+      <td>Tires were on wear bars on rear (middle and side); nearly at wear bars on front; both still round and feel almost new</td>
+      <td></td>
+      <td>450.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>New left side front brake pads (OEM)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>55.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>New Oil (Amsoil 10w-40) and filter (OEM)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>38.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>55018</td>
+      <td>2013-06-14</td>
+      <td></td>
+      <td>New Corbin seat</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>650.00</td>
+    </tr>
+    <tr>
+      <td>60675</td>
+      <td>2013-08-12</td>
+      <td>S. Harmer</td>
+      <td>New Oil (Amsoil 10w-40) and Filter (OEM)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>45.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>61616</td>
+      <td>2013-08-15</td>
+      <td>Rosie Toes</td>
+      <td>Install used tires (PR3)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>40.00</td>
+    </tr>
+    <tr>
+      <td>61616</td>
+      <td>2013-08-15</td>
+      <td>S. Harmer</td>
+      <td>New right side front brake pads (OEM)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>55.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>62483</td>
+      <td>2013-08-19</td>
+      <td>S. Harmer</td>
+      <td>New Air Filter</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>55.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>63692</td>
+      <td>2013-08-21</td>
+      <td>S. Harmer</td>
+      <td>Install Osram hi-beam</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>65348</td>
+      <td>2013-10-05</td>
+      <td>S. Harmer</td>
+      <td>New fork seal (left side only) OEM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>15.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>New fork oil (both legs) motul 7w</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>10.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>New Steering Head Bearings (OEM)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>50.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>New Battery (Yuasa)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>200.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>65348</td>
+      <td>2013-10-05</td>
+      <td>Rosie Toes</td>
+      <td>New Tires - Pilot Road 3</td>
+      <td>Michelin Pilot Road 3</td>
+      <td>10658</td>
+      <td>Michelin Pilot Road 3</td>
+      <td>10658</td>
+      <td>"""At wear bars on front not quite on rear.  Front tire more worn just off centre  not feeling super great on slow corners. (Update: steering head bearings were completely shot)"""</td>
+      <td></td>
+      <td>420.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>65691</td>
+      <td>2013-11-15</td>
+      <td>S. Harmer</td>
+      <td>Oil Change (no filter) Amsoil 10w-40</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>33.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>65691</td>
+      <td>2014-03-20</td>
+      <td>S. Harmer</td>
+      <td>New smoke windscreen</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>120.00</td>
+    </tr>
+    <tr>
+      <td>66216</td>
+      <td>2014-04-27</td>
+      <td>S. Harmer</td>
+      <td>Oil change (Amsoil 10w-40)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>20.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>66216</td>
+      <td>2014-05-06</td>
+      <td>S. Harmer</td>
+      <td>Final Drive Oil Change (Amsoil)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>5.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>67632</td>
+      <td>2014-06-30</td>
+      <td>S. Harmer</td>
+      <td>New fork seal (right side only) OEM (did not change oil)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>15.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>69000</td>
+      <td>2014-07-09</td>
+      <td>S. Harmer</td>
+      <td>Clean Throttle Bodies and Air Filter</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>69217</td>
+      <td>2014-07-25</td>
+      <td>S. Harmer</td>
+      <td>New Oil (HondaPro 10w-40) and Filter (OEM)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>46.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>70424</td>
+      <td>2014-08-03</td>
+      <td>S. Harmer</td>
+      <td>Move Osram hi-beam to lowbeam (mistake) New Osram high-beam</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>20.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>76006</td>
+      <td>2014-09-29</td>
+      <td>S. Harmer</td>
+      <td>New Tires - Pilot Road 4 GT</td>
+      <td>Michelin Pilot Road 4 GT</td>
+      <td>9363</td>
+      <td>Michelin Pilot Road 4 GT</td>
+      <td>9363</td>
+      <td></td>
+      <td></td>
+      <td>450.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>76006</td>
+      <td>2014-11-01</td>
+      <td>S. Harmer</td>
+      <td>New Oil (HondaPro 10w-40) and Filter (OEM)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>50.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>76006</td>
+      <td>2015-03-20</td>
+      <td>S. Harmer</td>
+      <td>New Steering Head Bearings (OEM)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>60.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>New fork oil (both legs) motul 7w</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>20.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Clean Air Filter</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>76006</td>
+      <td>2015-04-02</td>
+      <td>S. Harmer</td>
+      <td>New Brake Fluid F/R (Dot 4 Synthetic)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>10.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>New Clutch Fluid (Dot 4 Synthetic)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Final Drive Oil Change (Amsoil)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>5.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>76700</td>
+      <td>2015-04-19</td>
+      <td>S. Harmer</td>
+      <td>Retorque steering head bearing</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>82475</td>
+      <td>2015-06-20</td>
+      <td></td>
+      <td>Cheech and Chong impression</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Major smoke show</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>82475</td>
+      <td>2015-06-20</td>
+      <td>S. Harmer</td>
+      <td>New Oil (HondaPro 10w-40)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>New oil did not change smoke show</td>
+      <td>40.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2015-06-21</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Oil found in rear PAIR valve covers and hoses.  O-ring gasket on pair holes were not on the valve cover when it came off. One gasket had fallen off into head on removal (recovered). The other's whereabouts is unknown.  Suspect that it fell off when being installed.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>82475</td>
+      <td>2015-06-21</td>
+      <td>S. Harmer</td>
+      <td>Valve Clearance Check - Rear cylinders only</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>New (mcguivered) o'ring on Cyl #2 gasket</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Fixed</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>83871</td>
+      <td>2015-06-28</td>
+      <td>S. Harmer</td>
+      <td>Plug small hole in rear tire (snake type plug)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>84021</td>
+      <td>2015-06-29</td>
+      <td>S. Harmer</td>
+      <td>Re-torque steering head</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>85369</td>
+      <td>2015-07-15</td>
+      <td>S. Harmer</td>
+      <td>Check rear brakes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Look good maybe 1/3rd worn</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>85369</td>
+      <td>2015-07-15</td>
+      <td>S. Harmer</td>
+      <td>New Tires - Pilot Road 4 GT</td>
+      <td>Michelin Pilot Road 4 GT</td>
+      <td>9753</td>
+      <td>Michelin Pilot Road 4 GT</td>
+      <td>9753</td>
+      <td></td>
+      <td></td>
+      <td>400.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>90600</td>
+      <td>2015-09-12</td>
+      <td></td>
+      <td>Parked for Winter</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>90600</td>
+      <td>2015-11-08</td>
+      <td>S. Harmer</td>
+      <td>Oil and Filter Change (Amsoil 10w40/Honda Filter)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>35.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>90600</td>
+      <td>2015-12-20</td>
+      <td>Iantomasi</td>
+      <td>Rear shock serviced</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>75.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>90600</td>
+      <td>2016-03-15</td>
+      <td>Markham Outdoor Power</td>
+      <td>Replace shaft drive (recall)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>95122</td>
+      <td>2016-07-12</td>
+      <td>S. Harmer</td>
+      <td>New Tires - Pilot Road 4 GT</td>
+      <td>Michelin Pilot Road 4 GT</td>
+      <td>10525</td>
+      <td>Michelin Pilot Road 4 GT</td>
+      <td>10525</td>
+      <td>Probably another 1000km + left on the tires.  Feeling a bit square though.</td>
+      <td></td>
+      <td>410.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>95122</td>
+      <td>2016-07-19</td>
+      <td>S. Harmer</td>
+      <td>Valve Clearance Check</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Replaced mcguivered o-ring with OEM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>New air filter</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>100.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>95122</td>
+      <td>2016-07-19</td>
+      <td>S. Harmer</td>
+      <td>Install Cruise Control</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>600.00</td>
+    </tr>
+    <tr>
+      <td>100616</td>
+      <td>2016-11-12</td>
+      <td>S. Harmer</td>
+      <td>Oil and Filter Change (Amsoil 10w40/Honda Filter)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>50.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>101527</td>
+      <td>2017-05-10</td>
+      <td>Iantomasi</td>
+      <td>Rear shock serviced</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Reservoir line failed during a ride</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Check rear brakes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>OK. 1/2 worn.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>103600</td>
+      <td>2017-07-08</td>
+      <td>S. Harmer</td>
+      <td>Coolant Change (Canadian Tire OEM Honda)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>20.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>105647</td>
+      <td>2017-07-31</td>
+      <td>S. Harmer</td>
+      <td>New Tires - Dunlop Roadsmart 3</td>
+      <td>Dunlop Roadsmart 3</td>
+      <td>6719</td>
+      <td>Dunlop Roadsmart 3</td>
+      <td>6719</td>
+      <td>6/7mm rear tread (side/middle)  5mm front tread</td>
+      <td></td>
+      <td>317.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Check front brakes.  Left side pads 1/3-1/4 left</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>105647</td>
+      <td>2017-08-16</td>
+      <td>S. Harmer</td>
+      <td>New Steering Head Bearings (OEM)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>120.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>New fork oil - Bell Ray high perf 7.5w</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Compression tube oil was very dirty</td>
+      <td>20.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>106418</td>
+      <td>2017-08-22</td>
+      <td>S. Harmer</td>
+      <td>Retorque steering head</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>109109</td>
+      <td>2017-11-19</td>
+      <td>S. Harmer</td>
+      <td>Oil and Filter Change (Amsoil 10w40/Honda Filter)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>50.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Parked for Winter</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Fuel Stabilizer added</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>112366</td>
+      <td>2018-08-04</td>
+      <td>S. Harmer</td>
+      <td>Change fork oil Belray 7w</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Black spacers were broken. Glued them back together. Front brakes will need changing over the winter.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>112366</td>
+      <td>2018-08-25</td>
+      <td>S. Harmer</td>
+      <td>New Tires</td>
+      <td>Michelin Road 5</td>
+      <td>8200</td>
+      <td>Michelin Road 5</td>
+      <td>8200</td>
+      <td>These Michelins are so much better than the Dunlops.  Much more confidence.  I haven't had a single slip or spin.  The last ride with the Dunlops I must have had 7 or 8 spins or slips.  The Dunlops just do not like imperfect pavement it seems.</td>
+      <td></td>
+      <td>420.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>114829</td>
+      <td>2018-09-21</td>
+      <td>S. Harmer</td>
+      <td>New DAM Exhaust</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>800.00</td>
+    </tr>
+    <tr>
+      <td>114829</td>
+      <td>2018-10-05</td>
+      <td>S. Harmer</td>
+      <td>Fuel Stabilizer added</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>114829</td>
+      <td></td>
+      <td></td>
+      <td>Check rear brakes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Rear brakes look ok. Maybe 1/2 worn.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>114829</td>
+      <td>2018-11-08</td>
+      <td>S. Harmer</td>
+      <td>Oil and Filter change (Amsoil 10w40)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>50.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>115200</td>
+      <td>2019-06-29</td>
+      <td>S.Harmer</td>
+      <td>Disconnect Cruise Control</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>116106</td>
+      <td>2019-07-04</td>
+      <td>S. Harmer</td>
+      <td>New Battery and Regulator/Rectifier</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Due to faulty multimeter I diagnosed a bad R/R and Alternator due to very high charging voltage (16.2V) and battery voltage (15.3V).  After buying new battery and getting same voltage I used a different multimeter and reran tests all of which were within spec.  Decided to keep the new battery (old one was 5.5yrs) and R/R because why bother risking it given the age and kms on both.</td>
+      <td>250</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>116106</td>
+      <td>2019-07-08</td>
+      <td>S. Harmer</td>
+      <td>New LF brake pads</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Check RF pads in fall/winter</td>
+      <td>55</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>118615</td>
+      <td>2019-09-22</td>
+      <td>S. Harmer</td>
+      <td>Fuel stabilizer added.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>118615</td>
+      <td>2019-10-20</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Parked</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>118615</td>
+      <td>2019-11-21</td>
+      <td>S. Harmer</td>
+      <td>Oil & Filter Change - 10w40 Synthetic</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>50</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>118615</td>
+      <td>2019-12-31</td>
+      <td>S. Harmer</td>
+      <td>Final Drive Oil Change (Amsoil Synthetic)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>5.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>118615</td>
+      <td>2020-05-09</td>
+      <td>S. Harmer</td>
+      <td>Clean ground points (2 - left side front fairing and under tank.)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Brake Fluid Change (Dot 4 - Cdn Tire OEM)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>10</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Clutch Fluid Change (Dot 4)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Quite dirty. Drained and cleaned master cylinder reservoir.</td>
+      <td>10</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>New Spark Plugs (NGK OEM)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>80</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Front reflector replaced (lost)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>24</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Remove cruise control (previously disconnected but not removed)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Clean throttle bodies</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>120564</td>
+      <td>2020-07-26</td>
+      <td>S. Harmer</td>
+      <td>New Tires</td>
+      <td>Road 5 GT</td>
+      <td></td>
+      <td>Road 5 GT</td>
+      <td></td>
+      <td>Old tires were at the bars on front center and about 1000kms left on rear center.</td>
+      <td></td>
+      <td>420.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>122935</td>
+      <td>2020-10-13</td>
+      <td>S. Harmer</td>
+      <td>Fuel Stabilizer added</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Replace seat latch</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>40</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>122935</td>
+      <td>2020-10-24</td>
+      <td>S. Harmer</td>
+      <td>Drop oil</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>122935</td>
+      <td>2020-11-20</td>
+      <td>S. Harmer</td>
+      <td>New brakes pads (rear)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Down to wear bar on inside face (the one that cannot be seen).  Other face was getting close to bar.</td>
+      <td>50</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>122935</td>
+      <td>2021-04-04</td>
+      <td>S. Harmer</td>
+      <td>Add oil - Amsoil 10w40</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>40</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>124327</td>
+      <td>2021-07-31</td>
+      <td>S. Harmer</td>
+      <td>Add fuel stabilizer</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>124327</td>
+      <td>2021-11-01</td>
+      <td>S. Harmer</td>
+      <td>Drop oil</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>124327</td>
+      <td>2022-04-02</td>
+      <td>S. Harmer</td>
+      <td>Add oil - Amsoil 10w40</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>40</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>125709</td>
+      <td>2022-08-13</td>
+      <td>S. Harmer</td>
+      <td>Check front brakes.  Left side is close to done  maybe 2mm left before wear bar is gone. Not sure why they are squealing.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>125709</td>
+      <td>2022-08-18</td>
+      <td>S. Harmer</td>
+      <td>Stabilizer and ethanol treatment (stabil and amsoil)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>125709</td>
+      <td>2022-11-12</td>
+      <td>S. Harmer</td>
+      <td>Drop oil and change oil filter</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>15.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>125709</td>
+      <td>2023-05-13</td>
+      <td>S. Harmer</td>
+      <td>Add Oil. Amsoil 10w40.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>30.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>127307</td>
+      <td>2023-08-12</td>
+      <td>S. Harmer</td>
+      <td>Stabilizer (amsoil)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+            </p>
+          </div>
+        </div>
+        <div id="outline-container-VFR-Total-Costs" class="outline-3">
+          <h3 id="VFR-Total-Costs"><span class="section-number-3">2.1. </span>VFR Total-Costs</h3>
+          <div class="outline-text-3" id="text-2-1">
+            <p>
+ 
+<table>
+  <thead>
+    <tr>
+      <th>Maintenance Cost</th>
+      <th>Tire Cost</th>
+      <th>Other Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2806.00</td>
+      <td>5727.00</td>
+      <td>6773.00</td>
+    </tr>
+  </tbody>
+</table>
+            </p>
+          </div>
+        </div>
+        <div id="outline-container-VFR-Cost-per-km" class="outline-3">
+          <h3 id="VFR-Cost-per-km"><span class="section-number-3">2.1. </span>VFR Cost-per-km</h3>
+          <div class="outline-text-3" id="text-2-1">
+            <p>
+ 
+<table>
+  <thead>
+    <tr>
+      <th>Maintenance Cost</th>
+      <th>Tire Cost</th>
+      <th>Other Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.022</td>
+      <td>0.045</td>
+      <td>0.053</td>
+    </tr>
+  </tbody>
+</table>
+            </p>
+          </div>
+        </div>
+      </div>
+      </ul>
+      <div id="outline-container-3" class="outline-2">
+        <h2 id="Highlander"><span class="section-number-2">3. </span>Highlander</h2>
+        <div class="outline-text-2" id="text-3">
+        </div>
+        <div id="outline-container-Highlander-Maintenance-Log" class="outline-3">
+          <h3 id="Highlander-Maintenance-Log"><span class="section-number-3">3.1. </span>Highlander Maintenance-Log</h3>
+          <div class="outline-text-3" id="text-3-1">
+            <p>
+ 
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>kms</th>
+      <th>Work Performed</th>
+      <th>Done By</th>
+      <th>Notes</th>
+      <th>Maintenance Cost</th>
+      <th>Tire Cost</th>
+      <th>Other Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2011-07-15</td>
+      <td>63000</td>
+      <td>New Brake Pads & Rotors (F/R)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2008-12-10</td>
+      <td>79788</td>
+      <td>New Tires</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1100.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Oil Change</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4 wheel alignment</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2009-07-23</td>
+      <td>91000</td>
+      <td>Maintenance Service</td>
+      <td></td>
+      <td></td>
+      <td>500.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Oil Change</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Fuel Injector service</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2010-10-26</td>
+      <td>99458</td>
+      <td>Maintenance Service</td>
+      <td></td>
+      <td></td>
+      <td>800.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Oil Change</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Replace coolant</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Transmission and transaxle fluid replace</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Transfer Case fluid replaced</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Rear Diff fluid replaced</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>New Battery</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Front Diff fluid replaced</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Air filter</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2010-01-10</td>
+      <td>110400</td>
+      <td>Oil Change</td>
+      <td></td>
+      <td></td>
+      <td>30.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Timing Belt</td>
+      <td></td>
+      <td></td>
+      <td>400.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Water Pump</td>
+      <td></td>
+      <td></td>
+      <td>200.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Exhaust pipe gasket</td>
+      <td></td>
+      <td></td>
+      <td>220.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2011-06-01</td>
+      <td>122080</td>
+      <td>Oil Change</td>
+      <td></td>
+      <td></td>
+      <td>1488.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Maintenance Service done</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Brake fluid flush</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Machined Front Rotors</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>New Rear brake pads & rotors</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2012-01-05</td>
+      <td>131128</td>
+      <td>Transfer Case Fluid</td>
+      <td></td>
+      <td></td>
+      <td>18.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Rear Diff Fluid</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Oil Change</td>
+      <td></td>
+      <td></td>
+      <td>30.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2012-05-16</td>
+      <td>136213</td>
+      <td>Sensor Ratio</td>
+      <td></td>
+      <td></td>
+      <td>341</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Exhaust Manifold</td>
+      <td></td>
+      <td></td>
+      <td>344.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2012-07-01</td>
+      <td>140000</td>
+      <td>New O2 Sensors (4)</td>
+      <td></td>
+      <td></td>
+      <td>1400.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2012-09-27</td>
+      <td>143500</td>
+      <td>Oil and Filter Change (Mobil 1 Synthetic 5W-30)</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>50.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013-01-09</td>
+      <td>147000</td>
+      <td>Fix Exhaust - new flex joint and bracket fix</td>
+      <td>Markham Exhaust</td>
+      <td></td>
+      <td>140.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013-03-26</td>
+      <td>150057</td>
+      <td>Rear Rotors and Pads</td>
+      <td>Orchard Park</td>
+      <td></td>
+      <td>400.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013-08-23</td>
+      <td>156040</td>
+      <td>Oil and Filter Change (Amsoil XL Synthetic 10W-30)</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>35.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013-08-31</td>
+      <td>157000</td>
+      <td>Air filter</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>14.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2014-04-10</td>
+      <td>164286</td>
+      <td>Airfilter</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>18.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2014-04-30</td>
+      <td>164660</td>
+      <td>Oil and Filter Change (Amsoil XL Synthetic 10W-30)</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>35.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Replace Coolant</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>30.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2014-05-30</td>
+      <td>166000</td>
+      <td>Rear Diff fluid replaced (synth)</td>
+      <td></td>
+      <td></td>
+      <td>200.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Rotate Tires</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>New gas cap</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2014-12-20</td>
+      <td>174000</td>
+      <td>Oil and Filter (5W-30 dino oil)</td>
+      <td></td>
+      <td></td>
+      <td>50.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>New Brakes (pad and rotor - callipers cleaned)</td>
+      <td></td>
+      <td></td>
+      <td>1100.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Muffler welded</td>
+      <td></td>
+      <td></td>
+      <td>60.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Air filter</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>15.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2015-07-23</td>
+      <td>182000</td>
+      <td>Oil and Filter Change (Amsoil XL Synthetic 10W-30)</td>
+      <td></td>
+      <td></td>
+      <td>80.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>New lower power steering line</td>
+      <td></td>
+      <td></td>
+      <td>450.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2015-08-25</td>
+      <td>185000</td>
+      <td>Air filter</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>10.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2015-11-08</td>
+      <td>187000</td>
+      <td>Add 1L Oil</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>8.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2015-12-21</td>
+      <td>189000</td>
+      <td>Oil and Filter Change (Motomaster Synthetic 5W-30)</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>55.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2016-07-01</td>
+      <td>195000</td>
+      <td>Oil and Filter Change (Amsoil XL Synthetic 10W-40)</td>
+      <td>Auto Experts</td>
+      <td></td>
+      <td>40.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>O2 Sensors</td>
+      <td></td>
+      <td></td>
+      <td>500.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Brakes</td>
+      <td></td>
+      <td></td>
+      <td>400.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2017-01-11</td>
+      <td>202500</td>
+      <td>Oil and Filter Change (Mobil 1 Synthetic 5W-30)</td>
+      <td>Auto Experts</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Tires - Michelin LTX Premiere</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>745.12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Timing Belt waterpump</td>
+      <td></td>
+      <td></td>
+      <td>370.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>A/C belt</td>
+      <td></td>
+      <td></td>
+      <td>36.50</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>power steering belt</td>
+      <td></td>
+      <td></td>
+      <td>33.75</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>bulbs</td>
+      <td></td>
+      <td></td>
+      <td>10.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>labour</td>
+      <td></td>
+      <td></td>
+      <td>503.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2017-07-03</td>
+      <td>207800</td>
+      <td>Checked air filter.  Looks new. Check again in fall.</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2017-12-02</td>
+      <td>214100</td>
+      <td>Oil and Filter Change (Mobil 1 Synthetic 5W-30)</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>50.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2017-12-12</td>
+      <td>215000</td>
+      <td>New Rear Struts</td>
+      <td>Auto Experts</td>
+      <td></td>
+      <td>950.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2018-02-02</td>
+      <td>218000</td>
+      <td>New Rear Struts (warranty)</td>
+      <td>Auto Experts</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>New FR tire (nail)</td>
+      <td></td>
+      <td></td>
+      <td>212.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2018-04-22</td>
+      <td>220001</td>
+      <td>Air filter</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>12.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2018-07-12</td>
+      <td>222000</td>
+      <td>Front rotors and pads</td>
+      <td>Auto Experts</td>
+      <td></td>
+      <td>480.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>e-test</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Oil and Filter Change (Synthetic 5W-30)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2019-02-19</td>
+      <td>231000</td>
+      <td>New Battery</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>170.00</td>
+    </tr>
+    <tr>
+      <td>2019-03-02</td>
+      <td>231500</td>
+      <td>Oil Change (no filter) Motomaster 5w30 Synthetic</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>60.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Air Filter</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2019-03-04</td>
+      <td>231510</td>
+      <td>Exhaust Leak Fix</td>
+      <td>Markham Exhaust</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>80.00</td>
+    </tr>
+    <tr>
+      <td>2019-05-30</td>
+      <td>235000</td>
+      <td>Exhaust Leak Fixed</td>
+      <td>Markham Muffler</td>
+      <td></td>
+      <td>160.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2019-10-16</td>
+      <td>237000</td>
+      <td>Top up engine oil</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>5.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2020-01-04</td>
+      <td>240500</td>
+      <td>Oil & Filter (Synthetic 5W30)</td>
+      <td>Superior Tire</td>
+      <td></td>
+      <td>100</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Fix RF tire puncture</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2020-02-08</td>
+      <td>246089</td>
+      <td>New Front Tires (punture) Michelin Premier LTX</td>
+      <td>Superior Auto</td>
+      <td></td>
+      <td></td>
+      <td>470.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Transmission Cooler Hose</td>
+      <td></td>
+      <td></td>
+      <td>131.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Transmission Oil</td>
+      <td></td>
+      <td></td>
+      <td>35.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2020-07-14</td>
+      <td>248070</td>
+      <td>New brake calipers (rebuilt) front + pads and rotors (front & rear)</td>
+      <td>Danforth Auto Tech</td>
+      <td></td>
+      <td>1265</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Unseized parking brake</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>(and new cable)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2020-07-20</td>
+      <td>248100</td>
+      <td>New exhaust from (and including) resonator back to (but excluding) muffler.</td>
+      <td>Markham Muffler</td>
+      <td>Will need new muffler soon.  $260-320 - call ahead for them to order it.</td>
+      <td>260.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2020-09-11</td>
+      <td>250800</td>
+      <td>New muffler and flex pipe</td>
+      <td>Markham Muffler</td>
+      <td></td>
+      <td>330</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2021-07-13</td>
+      <td>257044</td>
+      <td>Oil and filter change - semi-synthetic 5W30.</td>
+      <td>Danforth Auto Tech</td>
+      <td></td>
+      <td>70.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Rear differential cleaned and sealant added and add diff oil</td>
+      <td></td>
+      <td></td>
+      <td>75.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>New Michelin tire (RR)</td>
+      <td></td>
+      <td></td>
+      <td>223.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Top up fluids</td>
+      <td></td>
+      <td></td>
+      <td>10.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Labour</td>
+      <td></td>
+      <td></td>
+      <td>170.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2021-11-18</td>
+      <td></td>
+      <td>Add 1L of oil - Amsoil 5w30</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>8</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2022-01-28</td>
+      <td>263090</td>
+      <td>Oil Change (5W30) semi-synth</td>
+      <td>Danforth Auto Tech</td>
+      <td></td>
+      <td>70.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Washer fluid pump replace</td>
+      <td></td>
+      <td></td>
+      <td>240</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2022-03-06</td>
+      <td>264000</td>
+      <td>Replace driver's seat belt.</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>400</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2022-03-18</td>
+      <td>264800</td>
+      <td>Add 1L oil</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>5</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2022-04-03</td>
+      <td>265900</td>
+      <td>Add 1L oil</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>5</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2022-05-07</td>
+      <td>266600</td>
+      <td>Add 1L oil</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>5</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2022-07-02</td>
+      <td>267800</td>
+      <td>Add 1L oil</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>5</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2022-07-08</td>
+      <td>267850</td>
+      <td>New Flex Pipe</td>
+      <td>Markham Muffler</td>
+      <td></td>
+      <td>150.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2022-07-09</td>
+      <td>267860</td>
+      <td>Oil Change (no filter)  Dino 5W30 Canadian Tire</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>20.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2022-07-26</td>
+      <td>271270</td>
+      <td>Add 1L oil (dyno 5w30)</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>5.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2022-08-21</td>
+      <td>273500</td>
+      <td>Add 1L oil (dyno 5w30)</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>5.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2022-09-17</td>
+      <td>274500</td>
+      <td>Add 1L oil (dyno 5w30)</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>5.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2022-10-21</td>
+      <td>275250</td>
+      <td>Add 1L oil</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>5.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2022-11-06</td>
+      <td>276380</td>
+      <td>Add 1L oil (dyno)</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>5.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2022-12-10</td>
+      <td>277210</td>
+      <td>Add 800ml oil</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>5.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2023-01-20</td>
+      <td>278130</td>
+      <td>Add 500ml oil</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>5.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2023-03-07</td>
+      <td>278583</td>
+      <td>Oil and Filter Change (semi-synth) and washer fluid</td>
+      <td>Danforth Auto Tech</td>
+      <td></td>
+      <td>105.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Repair tire puncture</td>
+      <td>Danforth Auto Tech</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>35.00</td>
+    </tr>
+    <tr>
+      <td>2023-03-15</td>
+      <td>280400</td>
+      <td>Add 1L Oil</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>6.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2023-04-10</td>
+      <td>281366</td>
+      <td>Add 1L Oil</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>6.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2023-06-03</td>
+      <td>282200</td>
+      <td>Add 1L Oil (10w30 Amsoil)</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>6.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2023-07-28</td>
+      <td>282750</td>
+      <td>Add 600ml Oil (10w30 Amsoil)</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>3.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2023-07-29</td>
+      <td>283000</td>
+      <td>Add 400ml Oil (10w30 Amsoil)</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>3.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2023-08-04</td>
+      <td>283675</td>
+      <td>Add 800ml Oil (10w30 Amsoil)</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>5.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2023-08-06</td>
+      <td>284200</td>
+      <td>Add 600ml Oil (10w30 Amsoil)</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>5.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2023-08-11</td>
+      <td>284700</td>
+      <td>Add 500ml Oil (10w30 Amsoil)</td>
+      <td>S. Harmer</td>
+      <td></td>
+      <td>5.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2023-09-26</td>
+      <td></td>
+      <td>Retired; muffler/exhaust; brake issue; running on 5 cylinders; burning oil; leaking power steering fluid; parking brake cable</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+            </p>
+          </div>
+        </div>
+        <div id="outline-container-Highlander-Total-Costs" class="outline-3">
+          <h3 id="Highlander-Total-Costs"><span class="section-number-3">3.1. </span>Highlander Total-Costs</h3>
+          <div class="outline-text-3" id="text-3-1">
+            <p>
+ 
+<table>
+  <thead>
+    <tr>
+      <th>Maintenance Cost</th>
+      <th>Tire Cost</th>
+      <th>Other Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>16099.25</td>
+      <td>2315.12</td>
+      <td>285.00</td>
+    </tr>
+  </tbody>
+</table>
+            </p>
+          </div>
+        </div>
+        <div id="outline-container-Highlander-Cost-per-km" class="outline-3">
+          <h3 id="Highlander-Cost-per-km"><span class="section-number-3">3.1. </span>Highlander Cost-per-km</h3>
+          <div class="outline-text-3" id="text-3-1">
+            <p>
+ 
+<table>
+  <thead>
+    <tr>
+      <th>Maintenance Cost</th>
+      <th>Tire Cost</th>
+      <th>Other Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.111</td>
+      <td>0.016</td>
+      <td>0.002</td>
+    </tr>
+  </tbody>
+</table>
+            </p>
+          </div>
+        </div>
+      </div>
+      </ul>
+
+    </div>
+  </body>
+</html>
